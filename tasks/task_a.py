@@ -8,5 +8,5 @@ class TaskA(Task, Zenatonable):
 
     def handle(self):
         print('Task A')
-        time.sleep(3)
+        time.sleep(0.1)
         return 'Task A'

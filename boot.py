@@ -1,4 +1,2 @@
-# Write to stdout immediately
-STDOUT.sync = true
-
 import client
+from workflows.sequential_workflow import SequentialWorkflow

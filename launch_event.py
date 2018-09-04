@@ -1,5 +1,6 @@
 import time
 
+import client
 from events.my_event import MyEvent
 from workflows.event_workflow import EventWorkflow
 

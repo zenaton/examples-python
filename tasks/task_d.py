@@ -4,9 +4,9 @@ from Zenaton.core.abstracts.task import Task
 from Zenaton.core.traits.zenatonable import Zenatonable
 
 
-class TaskC(Task, Zenatonable):
+class TaskD(Task, Zenatonable):
 
     def handle(self):
-        print('Task C')
+        print('Task D')
         time.sleep(9)
-        return 'Task C'
+        return 'Task D'

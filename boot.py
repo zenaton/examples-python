@@ -8,3 +8,4 @@ from workflows.version_workflow import VersionWorkflow
 from workflows.version_workflow_v0 import VersionWorkflowV0
 from workflows.version_workflow_v1 import VersionWorkflowV1
 from workflows.version_workflow_v2 import VersionWorkflowV2
+from workflows.wait_event_workflow import WaitEventWorkflow

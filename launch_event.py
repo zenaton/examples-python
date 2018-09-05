@@ -8,4 +8,4 @@ EventWorkflow().dispatch()
 
 time.sleep(0.5)
 
-EventWorkflow().where_id('MyId5').send_event(event=MyEvent)
+EventWorkflow.where_id('MyId').send_event(event=MyEvent())

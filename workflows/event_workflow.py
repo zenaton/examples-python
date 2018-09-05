@@ -18,4 +18,4 @@ class EventWorkflow(Workflow, Zenatonable):
             TaskC().execute()
 
     def id(self):
-        return 'MyId5'
+        return 'MyId'

@@ -8,4 +8,4 @@ WaitEventWorkflow().dispatch()
 
 time.sleep(2)
 
-WaitEventWorkflow.where_id('MyId').send_event(event=MyEvent())
+WaitEventWorkflow.where_id('MyId40').send_event(event=MyEvent())

@@ -14,12 +14,10 @@ class WaitEventWorkflow(Workflow, Zenatonable):
 
         event = Wait(MyEvent).seconds(4.0).execute()
 
-        print(event)
-
         if event:
             TaskA().execute()
         else:
             TaskB().execute()
 
     def id(self):
-        return 'MyId'
+        return 'MyId40'

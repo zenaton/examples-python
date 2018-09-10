@@ -12,7 +12,7 @@ class WaitEventWorkflow(Workflow, Zenatonable):
 
     def handle(self):
 
-        event = Wait(MyEvent).seconds(4.0).execute()
+        event = Wait(MyEvent).seconds(4).execute()
 
         if event:
             TaskA().execute()

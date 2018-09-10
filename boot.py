@@ -9,3 +9,4 @@ from workflows.version_workflow_v0 import VersionWorkflowV0
 from workflows.version_workflow_v1 import VersionWorkflowV1
 from workflows.version_workflow_v2 import VersionWorkflowV2
 from workflows.wait_event_workflow import WaitEventWorkflow
+from workflows.recursive.recursive_workflow import RecursiveWorkflow

@@ -11,5 +11,4 @@ class SendEventTask(Zenatonable, Task):
 
     def handle(self):
         from .recursive_workflow import RecursiveWorkflow
-        print('send_id: {}'.format(self.send_id))
         RecursiveWorkflow.where_id(self.send_id).send_event(EndingEvent())

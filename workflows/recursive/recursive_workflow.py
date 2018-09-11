@@ -16,15 +16,11 @@ class RecursiveWorkflow(Workflow, Zenatonable):
 
     def handle(self):
         counter = 0
-        print('Step 1: Display Task Loop')
         while counter < 10:
             DisplayTask(counter).execute()
             counter += 1
-        print('Step 2: SendEventTask')
         SendEventTask(self.workflow_id).dispatch()
-        print('Step 3: Wait Task')
         Wait(EndingEvent).execute()
-        print('Step 4: Relaunch Task')
         RelaunchTask(self.workflow_id, self.max).execute()
 
     def id(self):

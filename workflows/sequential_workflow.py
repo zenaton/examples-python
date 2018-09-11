@@ -10,3 +10,6 @@ class SequentialWorkflow(Workflow, Zenatonable):
     def handle(self):
         TaskA().execute()
         TaskB().execute()
+
+    def id(self):
+        return 'MyWaitId11'

@@ -10,7 +10,6 @@ class RelaunchTask(Zenatonable, Task):
 
     def handle(self):
         from .recursive_workflow import RecursiveWorkflow
-        print('RelaunchTask: handle {} {}'.format(self.task_id, self.max))
         if self.task_id < self.max:
             self.task_id += 1
             print("Iterations: {}".format(self.task_id))

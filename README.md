@@ -12,6 +12,14 @@ cp .env.example .env
 ```
 and populate it with your application id and api token found [here](https://zenaton.com/app/api).
 
+These a the minimal requirements to run the Zenaton client:
+
+```
+ZENATON_APP_ID=*****************
+ZENATON_API_TOKEN=***************************
+ZENATON_APP_ENV=dev
+```
+
 ### Running on Docker
 Simply run
 ```

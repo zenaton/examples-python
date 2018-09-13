@@ -7,6 +7,7 @@ from Zenaton.core.traits.zenatonable import Zenatonable
 class TaskC(Task, Zenatonable):
 
     def handle(self):
-        print('Task C')
+        print('Task C starts')
         time.sleep(7)
-        return 'Task C'
+        print('Task C ends')
+        return 2

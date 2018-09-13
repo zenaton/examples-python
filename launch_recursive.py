@@ -1,9 +1,8 @@
-import random
-
 import client
 
 from workflows.recursive.recursive_workflow import RecursiveWorkflow
 
-workflow_id = int(random.random() * 10000)
+# if you need to kill an existing workflow, use:
+# RecursiveWorkflow.where_id(0).kill()
 
-RecursiveWorkflow(workflow_id, workflow_id + 10).dispatch()
+RecursiveWorkflow(0, 2).dispatch()

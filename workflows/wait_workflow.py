@@ -11,5 +11,5 @@ class WaitWorkflow(Workflow, Zenatonable):
 
     def handle(self):
         TaskA().execute()
-        Wait().seconds(5).execute()  # Wait().timestamp(1535984730).execute()
+        Wait().seconds(5).execute()
         TaskB().execute()

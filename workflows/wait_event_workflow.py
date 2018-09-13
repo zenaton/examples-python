@@ -10,6 +10,9 @@ from events.my_event import MyEvent
 
 class WaitEventWorkflow(Workflow, Zenatonable):
 
+    def __init__(self, id_):
+        self.id_ = id_
+
     def handle(self):
 
         event = Wait(MyEvent).seconds(4).execute()
@@ -20,4 +23,4 @@ class WaitEventWorkflow(Workflow, Zenatonable):
             TaskB().execute()
 
     def id(self):
-        return 'MyId40'
+        return self.id_

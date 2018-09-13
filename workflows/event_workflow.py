@@ -9,6 +9,9 @@ from tasks.task_c import TaskC
 
 class EventWorkflow(Workflow, Zenatonable):
 
+    def __init__(self, id_):
+        self.id_ = id_
+
     def handle(self):
         TaskA().execute()
         TaskB().execute()
@@ -18,4 +21,4 @@ class EventWorkflow(Workflow, Zenatonable):
             TaskC().execute()
 
     def id(self):
-        return 'MyId'
+        return self.id_

@@ -1,6 +1,7 @@
 from tasks.task_a import TaskA
 from tasks.task_b import TaskB
 from tasks.task_c import TaskC
+from tasks.task_d import TaskD
 
 from Zenaton.core.abstracts.workflow import Workflow
 from Zenaton.core.traits.zenatonable import Zenatonable
@@ -10,9 +11,15 @@ from Zenaton.core.parallel import Parallel
 class ParallelWorkflow(Workflow, Zenatonable):
 
     def handle(self):
-        Parallel(
+
+        # Execute taskA and taskB in parallel
+        a, b = Parallel(
             TaskA(),
             TaskB()
         ).execute()
 
-        TaskC().execute()
+        # Wait for the end of execution of both tasks
+        if a > b:
+            TaskC().execute()
+        else:
+            TaskD().execute()

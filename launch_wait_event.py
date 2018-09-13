@@ -1,11 +1,14 @@
 import time
+import uuid
 
 import client
 from workflows.wait_event_workflow import WaitEventWorkflow
 from events.my_event import MyEvent
 
-WaitEventWorkflow().dispatch()
+event_id = str(uuid.uuid4())
+
+WaitEventWorkflow(event_id).dispatch()
 
 time.sleep(2)
 
-WaitEventWorkflow.where_id('MyId40').send_event(event=MyEvent())
+WaitEventWorkflow.where_id(event_id).send_event(event=MyEvent())

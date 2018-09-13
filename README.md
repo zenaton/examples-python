@@ -47,7 +47,7 @@ Your all set!
 *Your workflows will be processed by your worker, so you won't see anything except the stdout and stderr, respectively `zenaton.out` and `zenaton.err`. Look at these files :)*
 
 ## Example 1 : Sequential tasks execution
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/sequential_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/sequential_workflow.py) showcases
 - a sequential execution of two tasks. The second task is executed only when the first one is processed.
 - In a sequential task execution, you can get the output of a task. The result of the first task can be used by the second one.
 
@@ -56,11 +56,11 @@ Your all set!
 </p>
 
 ```python
-python launch_sequential.rb
+python launch_sequential.py
 ```
 
 ## Example 2: Parallel tasks execution
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/parallel_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/parallel_workflow.py) showcases
 - a parallel execution of 2 tasks
 - a third task that is executed only after *both* first two tasks were processed
 
@@ -69,11 +69,11 @@ python launch_sequential.rb
 </p>
 
 ```python
-python launch_parallel.rb
+python launch_parallel.py
 ```
 
 ## Example 3: Asynchronous tasks execution
-[this example](https://github.com/zenaton/examples-python/tree/master/workflows/asynchronous_workflow.rb) showcases
+[this example](https://github.com/zenaton/examples-python/tree/master/workflows/asynchronous_workflow.py) showcases
 - An asynchronous execution of a task A (fire and forget)
 - Then a sequential execution of Task B
 
@@ -82,13 +82,13 @@ python launch_parallel.rb
 </p>
 
 ```python
-python launch_asynchronous.rb
+python launch_asynchronous.py
 ```
 
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
 
 ## Example 4: Event
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/event_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/event_workflow.py) showcases
 - how to change a workflow's behaviour based on an external event
 
 <p align="center">
@@ -96,11 +96,11 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 </p>
 
 ```python
-python launch_event.rb
+python launch_event.py
 ```
 
 ## Example 5: Wait
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/wait_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/wait_workflow.py) showcases
 - how the provided `Wait` task can be used to pause the workflow for a specified duration
 
 <p align="center">
@@ -108,11 +108,11 @@ python launch_event.rb
 </p>
 
 ```python
-python launch_wait.rb
+python launch_wait.py
 ```
 
 ## Example 6: Wait Event
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/wait_event_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/wait_event_workflow.py) showcases
 - how the provided `Wait` task can also be used to pause the workflow up to receiving a specific external event
 
 <p align="center">
@@ -120,21 +120,21 @@ python launch_wait.rb
 </p>
 
 ```python
-python launch_wait_event.rb
+python launch_wait_event.py
 ```
 
 ## Example 7: Recursive Workflow
-[This example](https://github.com/zenaton/examples-python/tree/master/recursive/recursive_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/recursive/recursive_workflow.py) showcases
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
 ```python
-python launch_recursive.rb
+python launch_recursive.py
 ```
 
 ## Example 8: Workflow Versions
-[This example](https://github.com/zenaton/examples-python/tree/master/workflows/version_workflow.rb) showcases
+[This example](https://github.com/zenaton/examples-python/tree/master/workflows/version_workflow.py) showcases
 - how to update your workflow implementation, even while previous versions are still running
 
 ```python
-python launch_version.rb
+python launch_version.py
 ```

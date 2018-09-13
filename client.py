@@ -1,19 +1,14 @@
 import os
+from dotenv import load_dotenv
 
 from Zenaton.core.client import Client
 
 # LOADING CONFIG FROM .env file
-env = {}
-with open('.env') as f:
-    for line in f:
-        if line.startswith('#') or line.strip() == '':
-            continue
-        key, value = line.strip().split('=')
-        env[key] = value
+load_dotenv()
+app_id = os.getenv('ZENATON_APP_ID')
+api_token = os.getenv('ZENATON_API_TOKEN')
+app_env = os.getenv('ZENATON_APP_ENV')
 
-app_id = env.get('ZENATON_APP_ID')
-api_token = env.get('ZENATON_API_TOKEN')
-app_env = env.get('ZENATON_APP_ENV')
 
 if not app_id:
     raise Exception('Please include your ZENATON_APP_ID in the .env file')

@@ -31,7 +31,7 @@ You're all set!
 ### Running Locally
 Install dependencies
 ```
-bundle install
+pip install -r requirements.txt
 ```
 Then, you need to install a Zenaton worker
 ```

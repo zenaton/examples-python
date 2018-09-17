@@ -1,6 +1,6 @@
-from Zenaton.core.tasks.wait import Wait
-from Zenaton.core.abstracts.workflow import Workflow
-from Zenaton.core.traits.zenatonable import Zenatonable
+from zenaton.tasks.wait import Wait
+from zenaton.abstracts.workflow import Workflow
+from zenaton.traits.zenatonable import Zenatonable
 
 from workflows.recursive.display_task import DisplayTask
 from workflows.recursive.send_event_task import SendEventTask
@@ -16,7 +16,7 @@ class RecursiveWorkflow(Workflow, Zenatonable):
 
     def handle(self):
         counter = 0
-        while counter < 10:
+        while counter < 3:
             DisplayTask(counter).execute()
             counter += 1
         SendEventTask(self.workflow_id).dispatch()

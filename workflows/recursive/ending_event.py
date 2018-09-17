@@ -1,4 +1,4 @@
-from Zenaton.core.abstracts.event import Event
+from zenaton.abstracts.event import Event
 
 
 class EndingEvent(Event):

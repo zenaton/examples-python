@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from Zenaton.core.client import Client
+from zenaton.client import Client
 
 # LOADING CONFIG FROM .env file
 load_dotenv()

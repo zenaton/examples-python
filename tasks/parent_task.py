@@ -1,7 +1,7 @@
 import time
 
-from Zenaton.core.abstracts.task import Task
-from Zenaton.core.traits.zenatonable import Zenatonable
+from zenaton.abstracts.task import Task
+from zenaton.traits.zenatonable import Zenatonable
 
 from .task_a import TaskA
 

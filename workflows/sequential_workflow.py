@@ -12,7 +12,7 @@ class SequentialWorkflow(Workflow, Zenatonable):
 
         a = TaskA().execute()
 
-        if a == 0:
+        if a > 0:
             TaskB().execute()
         else:
             TaskC().execute()

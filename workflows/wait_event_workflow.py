@@ -1,4 +1,3 @@
-import zenaton
 from zenaton.abstracts.workflow import Workflow
 from zenaton.traits.zenatonable import Zenatonable
 from zenaton.tasks.wait import Wait

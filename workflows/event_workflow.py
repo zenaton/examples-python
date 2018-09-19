@@ -9,16 +9,20 @@ from tasks.task_c import TaskC
 
 class EventWorkflow(Workflow, Zenatonable):
 
-    def __init__(self, id_):
+    def __init__(self, id_, state=True):
         self.id_ = id_
+        self.state = state
 
     def handle(self):
         TaskA().execute()
-        TaskB().execute()
+        if self.state:
+            TaskB().execute()
+        else:
+            TaskC().execute()
 
     def on_event(self, event):
         if issubclass(MyEvent, type(event)):
-            TaskC().execute()
+            self.state = False
 
     def id(self):
         return self.id_

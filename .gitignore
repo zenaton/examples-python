@@ -1,0 +1,5 @@
+.env
+.DS_Store
+zenaton.out
+zenaton.err
+zenaton.log

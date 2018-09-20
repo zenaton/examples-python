@@ -19,3 +19,6 @@ class SequentialWorkflow(Workflow, Zenatonable):
             TaskC().execute()
 
         TaskD().execute()
+
+    def id(self):
+        return 'MySequentialId'

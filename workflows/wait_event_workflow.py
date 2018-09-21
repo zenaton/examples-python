@@ -1,7 +1,6 @@
-import Zenaton
-from Zenaton.core.abstracts.workflow import Workflow
-from Zenaton.core.traits.zenatonable import Zenatonable
-from Zenaton.core.tasks.wait import Wait
+from zenaton.abstracts.workflow import Workflow
+from zenaton.traits.zenatonable import Zenatonable
+from zenaton.tasks.wait import Wait
 
 from tasks.task_a import TaskA
 from tasks.task_b import TaskB
@@ -9,6 +8,9 @@ from events.my_event import MyEvent
 
 
 class WaitEventWorkflow(Workflow, Zenatonable):
+
+    def __init__(self, id_):
+        self.id_ = id_
 
     def handle(self):
 
@@ -20,4 +22,4 @@ class WaitEventWorkflow(Workflow, Zenatonable):
             TaskB().execute()
 
     def id(self):
-        return 'MyId40'
+        return self.id_

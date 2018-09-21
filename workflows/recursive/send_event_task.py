@@ -1,5 +1,5 @@
-from Zenaton.core.abstracts.task import Task
-from Zenaton.core.traits.zenatonable import Zenatonable
+from zenaton.abstracts.task import Task
+from zenaton.traits.zenatonable import Zenatonable
 
 from .ending_event import EndingEvent
 

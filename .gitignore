@@ -1,0 +1,11 @@
+.env
+.DS_Store
+zenaton.out
+zenaton.err
+zenaton.log
+.coverage
+*.egg-info
+*.ipynb
+build
+dist
+.idea

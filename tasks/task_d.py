@@ -1,12 +1,13 @@
 import time
 
-from Zenaton.core.abstracts.task import Task
-from Zenaton.core.traits.zenatonable import Zenatonable
+from zenaton.abstracts.task import Task
+from zenaton.traits.zenatonable import Zenatonable
 
 
 class TaskD(Task, Zenatonable):
 
     def handle(self):
-        print('Task D')
+        print('Task D starts')
         time.sleep(9)
-        return 'Task D'
+        print('Task D ends')
+        return 3

@@ -1,13 +1,16 @@
 import time
+import uuid
 
 import client
-from workflows.sequential_workflow import SequentialWorkflow
+from workflows.id_workflow import IdWorkflow
+
+workflow_id = str(uuid.uuid4())
 
 """Step 1: Dispatch"""
-SequentialWorkflow().dispatch()
+IdWorkflow(workflow_id).dispatch()
 
 """Step 2: Sleep"""
 time.sleep(2)
 
 """Step 3: Kill"""
-SequentialWorkflow().where_id('MySequentialId').kill()
+IdWorkflow.where_id(workflow_id).kill()

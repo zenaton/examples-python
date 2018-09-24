@@ -1,14 +1,17 @@
 import time
+import uuid
 
 import client
-from workflows.sequential_workflow import SequentialWorkflow
+from workflows.id_workflow import IdWorkflow
+
+workflow_id = str(uuid.uuid4())
 
 """Step 1: Dispatch"""
-SequentialWorkflow().dispatch()
+IdWorkflow(workflow_id).dispatch()
 
 """Step 2: Sleep"""
 time.sleep(1)
 
 """Step 3: Find Workflow"""
-workflow = SequentialWorkflow().where_id('MySequentialId').find()
+workflow = IdWorkflow.where_id(workflow_id).find()
 print(workflow)

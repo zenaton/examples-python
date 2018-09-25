@@ -4,7 +4,7 @@ This repository contains examples of workflows built with Zenaton. These example
 ## Installation
 Download this repo
 ```
-git clone https://github.com/zenaton/examples-python.git; cd examples-python
+git clone https://github.com/zenaton/examples-python.git && cd examples-python
 ```
 then add an .env file
 ```

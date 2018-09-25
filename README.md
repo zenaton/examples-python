@@ -56,7 +56,7 @@ Your all set!
 </p>
 
 ```python
-python launch_sequential.py
+python3 launch_sequential.py
 ```
 
 ## Example 2: Parallel tasks execution
@@ -69,7 +69,7 @@ python launch_sequential.py
 </p>
 
 ```python
-python launch_parallel.py
+python3 launch_parallel.py
 ```
 
 ## Example 3: Asynchronous tasks execution
@@ -82,7 +82,7 @@ python launch_parallel.py
 </p>
 
 ```python
-python launch_asynchronous.py
+python3 launch_asynchronous.py
 ```
 
 When a task is dispatched asynchronously, the workflow continues its execution without waiting for the task completion. Consequently, a task asynchronous dispatching always returns a null value.
@@ -96,7 +96,7 @@ When a task is dispatched asynchronously, the workflow continues its execution w
 </p>
 
 ```python
-python launch_event.py
+python3 launch_event.py
 ```
 
 ## Example 5: Wait
@@ -108,7 +108,7 @@ python launch_event.py
 </p>
 
 ```python
-python launch_wait.py
+python3 launch_wait.py
 ```
 
 ## Example 6: Wait Event
@@ -120,7 +120,7 @@ python launch_wait.py
 </p>
 
 ```python
-python launch_wait_event.py
+python3 launch_wait_event.py
 ```
 
 ## Example 7: Recursive Workflow
@@ -128,7 +128,7 @@ python launch_wait_event.py
 - how launching events or workflows directly from orchestrated tasks allows you to schedule recurring workflows
 
 ```python
-python launch_recursive.py
+python3 launch_recursive.py
 ```
 
 ## Example 8: Workflow Versions
@@ -136,5 +136,5 @@ python launch_recursive.py
 - how to update your workflow implementation, even while previous versions are still running
 
 ```python
-python launch_version.py
+python3 launch_version.py
 ```

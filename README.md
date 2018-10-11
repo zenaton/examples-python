@@ -48,8 +48,8 @@ Your all set!
 
 ## Example 1 : Sequential tasks execution
 [This example](https://github.com/zenaton/examples-python/tree/master/workflows/sequential_workflow.py) showcases
-- a sequential execution of two tasks. The second task is executed only when the first one is processed.
-- In a sequential task execution, you can get the output of a task. The result of the first task can be used by the second one.
+- a sequential execution of three tasks. The second and third tasks are executed only when the previous one is processed.
+- In a sequential task execution, you can get the output of a task. The result of a task can be used by the next one.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_sequential.png" alt="Sequential Workflow Diagram" />
@@ -74,8 +74,8 @@ python launch_parallel.py
 
 ## Example 3: Asynchronous tasks execution
 [this example](https://github.com/zenaton/examples-python/tree/master/workflows/asynchronous_workflow.py) showcases
-- An asynchronous execution of a task A (fire and forget)
-- Then a sequential execution of Task B
+- Asynchronous executions of Task A and Task B (fire and forget)
+- Then sequential executions of Task C and Task D
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/zenaton/resources/master/examples/images/png/flow_async.png" alt="Asynchronous Workflow Diagram" />

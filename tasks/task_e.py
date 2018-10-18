@@ -6,5 +6,5 @@ class TaskE(Task, Zenatonable):
 
     def handle(self):
         print('Task E starts')
+        raise Exception('Task E Error')
         print('Task E ends')
-        return 0

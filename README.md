@@ -12,6 +12,8 @@ cp .env.example .env
 ```
 and populate it with your application id and api token found [here](https://zenaton.com/app/api).
 
+Or use the `.env.example` file in this repo.
+
 These a the minimal requirements to run the Zenaton client:
 
 ```

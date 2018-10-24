@@ -21,15 +21,6 @@ ZENATON_APP_ID=*****************
 ZENATON_API_TOKEN=***************************
 ZENATON_APP_ENV=dev
 ```
-
-### Running on Docker
-Simply run
-```
-docker-compose build; docker-compose up
-```
-
-You're all set!
-
 ### Running Locally
 Install dependencies
 ```

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+# Make sure dependencies are installed
+pip install -r requirements.txt
+
+# Start zenaton worker
+zenaton start
+zenaton listen --env=.env --boot=boot.py
+
+# Print zenaton output to stdout
+touch zenaton.out
+tail -f zenaton.out

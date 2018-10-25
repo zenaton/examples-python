@@ -36,6 +36,12 @@ zenaton start; zenaton listen --env=.env --boot=boot.py
 ```
 Your all set!
 
+### Running on Docker
+Simply run
+```
+docker-compose build; docker-compose up
+```
+ You're all set!
 
 *Your workflows will be processed by your worker, so you won't see anything except the stdout and stderr, respectively `zenaton.out` and `zenaton.err`. Look at these files :)*
 

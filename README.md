@@ -137,3 +137,6 @@ python3 launch_recursive.py
 ```python
 python3 launch_version.py
 ```
+
+## Real-life Examples
+__Triggering An Email After 3 Days of Cold Weather__ ([Medium Article](https://medium.com/zenaton/triggering-an-email-after-3-days-of-cold-weather-f7bed6f2df16), [Source Code](https://github.com/zenaton/articles-python/tree/master/triggering-an-email-after-3-days-of-cold-weather))

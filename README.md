@@ -30,7 +30,7 @@ then add an .env file
 ```
 cp .env.example .env
 ```
-and populate it with your application id and api token found [here](https://zenaton.com/app/api).
+and populate it with your application id and api token found [here](https://app.zenaton.com/api).
 
 Or use the `.env.example` file in this repo.
 

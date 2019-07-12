@@ -21,7 +21,7 @@ class EventWorkflow(Workflow, Zenatonable):
             TaskC().execute()
 
     def on_event(self, event):
-        if isinstance(MyEvent, type(event)):
+        if isinstance(event, MyEvent):
             self.state = False
 
     def id(self):

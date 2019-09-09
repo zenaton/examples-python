@@ -12,3 +12,4 @@ from workflows.wait_event_workflow import WaitEventWorkflow
 from workflows.recursive.recursive_workflow import RecursiveWorkflow
 from workflows.id_workflow import IdWorkflow
 from workflows.error_workflow import ErrorWorkflow
+from workflows.automatic_retry_workflow import AutomaticRetryWorkflow

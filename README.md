@@ -218,5 +218,20 @@ This example showcases
 python3 launch_error.py
 ```
 
+## Example 11: Automatic retry of failed tasks
+[This example](https://github.com/zenaton/examples-python/tree/master/tasks/task_with_retry.py) showcases
+- how a failed task can be retried automatically
+- how to customize the automatic retry policy
+ ```python
+python3 launch_automatic_retry.php
+```
+
+## Example 12: Schedule a task
+[This example](https://github.com/zenaton/examples-python/tree/master/schedule_task_a.py) showcases
+- how to schedule a task to make it run periodically
+ ```python
+python3 schedule_task_a.php
+```
+
 ## Real-life Examples
 __Triggering An Email After 3 Days of Cold Weather__ ([Medium Article](https://medium.com/zenaton/triggering-an-email-after-3-days-of-cold-weather-f7bed6f2df16), [Source Code](https://github.com/zenaton/articles-python/tree/master/triggering-an-email-after-3-days-of-cold-weather))

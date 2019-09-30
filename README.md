@@ -230,7 +230,7 @@ python3 launch_automatic_retry.php
 [This example](https://github.com/zenaton/examples-python/tree/master/schedule_task_a.py) showcases
 - how to schedule a task to make it run periodically
  ```python
-python3 schedule_task_a.php
+python3 schedule_task_a.py
 ```
 
 ## Real-life Examples
